@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap');
 
+/*#f9c48b, #f69051, #f26d40, #260803, #fdefec */
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -12,9 +14,25 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
+    background-color: #F9C48B;
+    color: #260803;
+}
+
+img {
+    width: 100%;
 }
 
 /*////////////////////////
@@ -22,14 +40,45 @@ body {
 ////////////////////////*/
 
 
+h2 {
+    margin: 0 0 .5rem 0;
+}
+
+p{
+    margin: .75rem 0;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
+section {
+    background-color: #FDEFEC;
+    box-shadow: 0 0.0625rem .25rem rgba(0, 0, 0, 0.16);
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
 
 
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+    body {
+        background-color: #f69051;
+    }
+}
+@media (min-width: 992px) {
+    html {
+        font-size: 20px;
+    }
+    body {
+        background-color: #f26d40;
+    }
+}
